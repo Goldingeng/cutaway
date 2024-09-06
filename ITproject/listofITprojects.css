@@ -1,0 +1,130 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(156, 19%, 15%);
+    padding: 14px 16px;
+}
+
+.topnav a, .topnav span {
+    flex: 1;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.topnav a.back-arrow {
+    flex: 0;
+    text-align: left;
+    padding: 14px 16px;
+}
+
+.topnav a:hover {
+    background-color: hwb(173 17% 64%);
+}
+
+.topnav span.active {
+    color: hwb(173 30% 22%);
+    cursor: default;
+}
+
+
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh; 
+    margin: 5vh 2vw;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    background-color: #1c1f1f;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.project-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.project-info {
+    color: #fff;
+}
+
+.project-info h3 {
+    margin-bottom: 5px;
+}
+
+.project-info p {
+    margin: 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: fixed;
+    bottom: 10px; 
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #15271f; 
+}
+
+
+.page-number,
+.prev-page,
+.next-page {
+    margin: 0 5px; 
+}
+
+.page-numbers {
+    display: flex;
+    gap: 10px;
+}
+
+.page-number,
+.prev-page,
+.next-page {
+    padding: 10px 20px;
+    background-color: hsl(156, 19%, 15%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-number:hover,
+.prev-page:hover,
+.next-page:hover {
+    background-color: #f2f2f2;
+    color: #333;
+}

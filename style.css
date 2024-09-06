@@ -58,8 +58,10 @@ h3 {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
 }
+
 
 .container{
     max-width: 1230px;
@@ -122,17 +124,11 @@ h3 {
     animation: ava-animate 5s infinite alternate;
 }
 
-.hero__boxCU{
-    max-width: 500px;
-    justify-self: center;
-    overflow: hidden;
-
-    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-    border: 10px solid #fff;
-    box-shadow: 2px 5px 10px
-    rgba(0, 0, 0, 0.5);
-    animation: ava-animate 5s infinite alternate;
+.highlight {
+    color: #ff6347; 
 }
+
+
 
 .hero__box-img{
     animation: ava-bg 3s infinite alternate;
